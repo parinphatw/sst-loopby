@@ -1,5 +1,42 @@
-type Todo @model {
+enum Categories {
+  SHIRT
+  SHORTS
+  T_SHIRT
+  PANTS
+  BRANDNAME
+  DRESS
+  TOPTANK
+}
+
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Firstname: String!
+  Lastname: String!
+  Address: String!
+  email: String!
+  OWN: [Shop] @connection(keyName: "byUser", fields: ["id"])
+  UserLovesShops: [UserShop] @connection(keyName: "byUser", fields: ["id"])
+}
+
+type Shop @model @auth(rules: [{allow: public}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  name: String!
+  categories: [Categories!]
+  userID: ID
+  users: [UserShop] @connection(keyName: "byShop", fields: ["id"])
+}
+
+type Todo @model @auth(rules: [{allow: public}]) {
   id: ID!
   name: String!
   description: String
 }
+
+type UserShop @model(queries: null) @key(name: "byUser", fields: ["userID", "shopID"]) @key(name: "byShop", fields: ["shopID", "userID"]) @auth(rules: [{allow: public}, {allow: public}]) {
+  id: ID!
+  userID: ID!
+  shopID: ID!
+  user: User! @connection(fields: ["userID"])
+  shop: Shop! @connection(fields: ["shopID"])
+}
+ 
