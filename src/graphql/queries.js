@@ -1,6 +1,3 @@
-/* eslint-disable */
-// this is an auto generated file. This will be overwritten
-
 export const syncUsers = /* GraphQL */ `
   query SyncUsers(
     $filter: ModelUserFilterInput
@@ -8,12 +5,7 @@ export const syncUsers = /* GraphQL */ `
     $nextToken: String
     $lastSync: AWSTimestamp
   ) {
-    syncUsers(
-      filter: $filter
-      limit: $limit
-      nextToken: $nextToken
-      lastSync: $lastSync
-    ) {
+    syncUsers(filter: $filter, limit: $limit, nextToken: $nextToken, lastSync: $lastSync) {
       items {
         id
         Firstname
@@ -85,11 +77,7 @@ export const getUser = /* GraphQL */ `
   }
 `;
 export const listUsers = /* GraphQL */ `
-  query ListUsers(
-    $filter: ModelUserFilterInput
-    $limit: Int
-    $nextToken: String
-  ) {
+  query ListUsers($filter: ModelUserFilterInput, $limit: Int, $nextToken: String) {
     listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
@@ -123,12 +111,7 @@ export const syncShops = /* GraphQL */ `
     $nextToken: String
     $lastSync: AWSTimestamp
   ) {
-    syncShops(
-      filter: $filter
-      limit: $limit
-      nextToken: $nextToken
-      lastSync: $lastSync
-    ) {
+    syncShops(filter: $filter, limit: $limit, nextToken: $nextToken, lastSync: $lastSync) {
       items {
         id
         name
@@ -179,11 +162,7 @@ export const getShop = /* GraphQL */ `
   }
 `;
 export const listShops = /* GraphQL */ `
-  query ListShops(
-    $filter: ModelShopFilterInput
-    $limit: Int
-    $nextToken: String
-  ) {
+  query ListShops($filter: ModelShopFilterInput, $limit: Int, $nextToken: String) {
     listShops(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
@@ -212,12 +191,7 @@ export const syncTodos = /* GraphQL */ `
     $nextToken: String
     $lastSync: AWSTimestamp
   ) {
-    syncTodos(
-      filter: $filter
-      limit: $limit
-      nextToken: $nextToken
-      lastSync: $lastSync
-    ) {
+    syncTodos(filter: $filter, limit: $limit, nextToken: $nextToken, lastSync: $lastSync) {
       items {
         id
         name
@@ -248,11 +222,7 @@ export const getTodo = /* GraphQL */ `
   }
 `;
 export const listTodos = /* GraphQL */ `
-  query ListTodos(
-    $filter: ModelTodoFilterInput
-    $limit: Int
-    $nextToken: String
-  ) {
+  query ListTodos($filter: ModelTodoFilterInput, $limit: Int, $nextToken: String) {
     listTodos(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
@@ -276,12 +246,7 @@ export const syncUserShops = /* GraphQL */ `
     $nextToken: String
     $lastSync: AWSTimestamp
   ) {
-    syncUserShops(
-      filter: $filter
-      limit: $limit
-      nextToken: $nextToken
-      lastSync: $lastSync
-    ) {
+    syncUserShops(filter: $filter, limit: $limit, nextToken: $nextToken, lastSync: $lastSync) {
       items {
         id
         userID
