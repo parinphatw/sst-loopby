@@ -1,3 +1,5 @@
+@import '~antd/dist/antd.css';
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -17,4 +19,10 @@ html {
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.ant-card-head-title {
+  color: white;
+  font-size: 24px;
+  border-bottom: none;
 }

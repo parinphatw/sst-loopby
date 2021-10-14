@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Button, Input } from 'antd';
-import 'antd/dist/antd.css';
 import { ReactComponent as LoopbyLogoComponent } from '../../assets/loopby_logo.svg';
 import { ReactComponent as CartIcon } from '../../assets/cart-icon.svg';
 import { ReactComponent as HeartIcon } from '../../assets/heart-icon.svg';
