@@ -26,3 +26,13 @@ code {
   font-size: 24px;
   border-bottom: none;
 }
+
+.ant-btn-circle:hover,
+.ant-btn-circle:focus {
+  border-color: #c53735;
+}
+
+.ant-btn-circle:hover svg,
+.ant-btn-circle:focus svg {
+  fill: #c53735;
+}
