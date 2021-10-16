@@ -30,8 +30,10 @@ const lastActive = '1 hour ago';
 const ProductDetailContainer = styled(({ children, className }) => (
   <div className={className}>{children}</div>
 ))`
+  display: flex;
+  justify-content: center;
   height: 1250px;
-  padding-left: 350px;
+  /* padding-left: 350px; */
   padding-top: 80px;
 `;
 
