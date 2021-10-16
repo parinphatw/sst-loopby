@@ -4,7 +4,7 @@ import { Card, Statistic, Button } from 'antd';
 import { ReactComponent as HeartIcon } from '../../assets/heart-icon.svg';
 
 const ProductDetailBoxContainer = ({ children, ...props }) => (
-  <Card {...props} style={{ width: '550px', height: '350px', marginLeft: '30px' }}>
+  <Card {...props} style={{ width: '100%', height: '330px', border: '1px solid #d7d7d7' }}>
     {children}
   </Card>
 );

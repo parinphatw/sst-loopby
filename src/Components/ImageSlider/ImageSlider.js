@@ -76,7 +76,7 @@ const DisplayedImage = styled(({ className, children }) => (
   width: 425px;
   margin-left: 30px;
   height: 100%;
-  border: 1px solid lightgray;
+  border: 1px solid #d7d7d7;
 `;
 
 const ImageSlider = ({ images }) => {
