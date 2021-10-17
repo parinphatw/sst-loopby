@@ -36,3 +36,15 @@ code {
 .ant-btn-circle:focus svg {
   fill: #c53735;
 }
+
+.ant-radio-checked .ant-radio-inner {
+  border-color: #c53735 !important ;
+}
+
+.ant-radio-checked .ant-radio-inner:after {
+  background-color: #c53735;
+}
+
+.ant-radio:hover .ant-radio-inner {
+  border-color: #c53735;
+}
