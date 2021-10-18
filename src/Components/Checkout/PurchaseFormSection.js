@@ -18,7 +18,7 @@ const FormSection = styled(({ className, children }) => (
 ))`
   display: flex;
   flex-direction: column;
-  margin-top: 35px;
+  margin-top: 45px;
 `;
 
 const FormSectionTitle = styled(({ className, title }) => (
@@ -53,6 +53,7 @@ const AddressFormSectionContent = styled(({ className }) => (
 ))`
   display: grid;
   width: 100%;
+  padding-left: 15px;
   grid-template-columns: auto auto;
   grid-column-gap: 60px;
   grid-row-gap: 20px;
@@ -62,13 +63,14 @@ const OrderAndExpressFormContent = styled(({ className }) => (
   <div className={className}>
     <div style={{ marginTop: '10px' }}>เลือกการจัดส่ง</div>
     <RadioContent />
-    <div style={{ marginTop: '10px' }}>การสั่งซื้อ</div>
+    <div style={{ marginTop: '10px' }}>รายการสั่งซื้อ</div>
     <OrderCard />
   </div>
 ))`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 15px;
 `;
 
 const RadioContent = () => {
@@ -134,6 +136,7 @@ const PaymentMethodFormContent = styled(({ className }) => (
 ))`
   display: flex;
   flex-direction: column;
+  padding-left: 15px;
   div {
     margin-top: 5px;
   }

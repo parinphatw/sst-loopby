@@ -4,6 +4,7 @@ import { Switch, Route, Redirect, BrowserRouter as Router } from 'react-router-d
 import Home from './Home';
 import ProductDetail from './ProductDetail';
 import Checkout from './Checkout';
+import SuccessCheckout from './SuccessCheckout';
 
 const RouteApp = () => {
   return (
@@ -15,6 +16,7 @@ const RouteApp = () => {
         </Route>
         <Route exact path="/detail" component={ProductDetail} />
         <Route exact path="/checkout" component={Checkout} />
+        <Route exact path="/checkout/success" component={SuccessCheckout} />
       </Switch>
     </Router>
   );
