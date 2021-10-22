@@ -48,3 +48,7 @@ code {
 .ant-radio:hover .ant-radio-inner {
   border-color: #c53735;
 }
+
+.ant-collapse-borderless > .ant-collapse-item {
+  border: none;
+}
