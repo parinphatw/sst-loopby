@@ -71,6 +71,7 @@ const WomanCategory = styled(({ className }) => {
 })`
   display: flex;
   padding: 60px 275px;
+  justify-content: center;
 `;
 
 export default WomanCategory;
