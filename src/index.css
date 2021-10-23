@@ -1,13 +1,54 @@
+@import '~antd/dist/antd.css';
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+body,
+html {
+  font-family: 'Prompt', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+.ant-btn-text:hover,
+.ant-btn-text:focus {
+  background: transparent !important ;
+  border-color: transparent !important;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.ant-card-head-title {
+  color: white;
+  font-size: 24px;
+  border-bottom: none;
+}
+
+.ant-btn-circle:hover,
+.ant-btn-circle:focus {
+  border-color: #c53735;
+}
+
+.ant-btn-circle:hover svg,
+.ant-btn-circle:focus svg {
+  fill: #c53735;
+}
+
+.ant-radio-checked .ant-radio-inner {
+  border-color: #c53735 !important ;
+}
+
+.ant-radio-checked .ant-radio-inner:after {
+  background-color: #c53735;
+}
+
+.ant-radio:hover .ant-radio-inner {
+  border-color: #c53735;
+}
+
+.ant-collapse-borderless > .ant-collapse-item {
+  border: none;
 }
