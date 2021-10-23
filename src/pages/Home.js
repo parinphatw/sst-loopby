@@ -10,7 +10,7 @@ import ProductCardSection from '../Components/common/ProductCardSection';
 import HeadCarouselImg from '../assets/HeadCarousel.png';
 import WomanCategoryImage from '../assets/WomanCategory.jpg';
 import ManCategoryImage from '../assets/ManCategory.jpg';
-import LoopbyMallImage from '../assets/loopby-mall.jpeg';
+import LoopbyMallImage from '../assets/loopby-mall.jpg';
 import RecommendProductSection from '../Components/Checkout/RecommendProductSection';
 
 const carouselImages = [HeadCarouselImg, HeadCarouselImg, HeadCarouselImg];
