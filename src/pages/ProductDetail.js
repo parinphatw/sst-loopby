@@ -15,9 +15,9 @@ const [productTitle, price, size, note, loved] = [
 ];
 
 const images = [
-  'https://img.freepik.com/free-vector/word-hello-speech-bubble-vector_53876-60258.jpg?size=626&ext=jpg',
-  'http://www.hello.com/img_/hellowithwaves.png',
-  'https://greedisgoods.com/wp-content/uploads/2018/09/Long-%E0%B8%84%E0%B8%B7%E0%B8%AD-Long-%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99-%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD-Long-Buy.jpg',
+  'https://rukminim1.flixcart.com/image/714/857/j15b6a80/t-shirt/e/g/b/xl-1217443-ether-original-imaesga3ddhehzwj.jpeg?q=50',
+  'https://secure.ap-tescoassets.com/assets/TH/950/2502010729950/ShotType1_540x540.jpg',
+  'https://sonic-sky.com/wp-content/uploads/2020/09/TW0001-002-Women-T-Shirt-Round-Neck-Black-back-scaled.jpg',
 ];
 
 const products = [

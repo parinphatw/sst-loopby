@@ -5,7 +5,9 @@ import { ReactComponent as SuccessIcon } from '../../assets/success-icon.svg';
 
 const ButtonSection = styled(({ className }) => (
   <div className={className}>
-    <Button style={{ borderColor: '#C53735', color: '#C53735' }}>เลือกดูสินค้าต่อ</Button>
+    <Button href="/home" style={{ borderColor: '#C53735', color: '#C53735' }}>
+      เลือกดูสินค้าต่อ
+    </Button>
     <Button type="primary" style={{ background: '#C53735', border: 'none' }}>
       ดูคำสั่งซื้อ
     </Button>

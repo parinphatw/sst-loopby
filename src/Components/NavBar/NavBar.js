@@ -65,7 +65,7 @@ const NavBar = () => {
       <NavBarContainer>
         <StyledSection width="400px">
           <LoopbyLogo />
-          <Button type="text" style={textButtonStyle}>
+          <Button type="text" style={textButtonStyle} href="/category/woman">
             ผู้หญิง
           </Button>
           <Button type="text" style={textButtonStyle}>
@@ -77,7 +77,7 @@ const NavBar = () => {
           <Button type="text" size="small" style={iconButtonStyle}>
             <HeartIcon style={iconButtonStyle} />
           </Button>
-          <Button type="text" size="small" style={iconButtonStyle}>
+          <Button type="text" size="small" style={iconButtonStyle} href="/checkout">
             <CartIcon style={iconButtonStyle} />
           </Button>
         </StyledSection>

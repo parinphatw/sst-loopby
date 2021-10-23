@@ -22,10 +22,16 @@ const SummaryDetial = styled(({ className }) => {
       <SubdetailField fieldName="ค่าส่ง" price={35} />
       <SubdetailField fieldName="ยอดรวมทั้งสิ้น" price={435} />
       <div style={{ height: 0, width: '100%', borderBottom: '1px solid #D7D7D7' }} />
-      <Button type="primary" style={{ background: '#C53735', border: 'none' }}>
+      <Button
+        type="primary"
+        href="/checkout/success"
+        style={{ background: '#C53735', border: 'none' }}
+      >
         ชำระเงิน
       </Button>
-      <Button style={{ borderColor: '#C53735', color: '#C53735' }}>เลือกดูสินค้าต่อ</Button>
+      <Button href="/home" style={{ borderColor: '#C53735', color: '#C53735' }}>
+        เลือกดูสินค้าต่อ
+      </Button>
     </div>
   );
 })`
