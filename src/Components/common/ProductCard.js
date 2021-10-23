@@ -9,7 +9,13 @@ const ProductCard = styled(({ className, imgSrc, productTitle, price, badge }) =
       className={className}
       bordered={false}
       hoverable
-      style={{ width: '260px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+      style={{
+        width: '260px',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        backgroundColor: 'inherit',
+      }}
       cover={<img src={imgSrc} alt={productTitle} style={{ height: '320px' }} />}
     >
       <div style={{ fontSize: '16px' }}>{productTitle}</div>

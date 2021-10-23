@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import ImageSlider from '../Components/ImageSlider/ImageSlider';
 import ProductDetailBox from '../Components/ProductDetail/ProductDetailBox';
 import StoreDetailBox from '../Components/ProductDetail/StoreDetailBox';
+import ProductCard from '../Components/common/ProductCard';
 
 /*  Dummy variable  */
 const [productTitle, price, size, note, loved] = [
@@ -19,6 +20,33 @@ const images = [
   'https://greedisgoods.com/wp-content/uploads/2018/09/Long-%E0%B8%84%E0%B8%B7%E0%B8%AD-Long-%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99-%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD-Long-Buy.jpg',
 ];
 
+const products = [
+  {
+    imgSrc:
+      'https://www.greenqueen.com.hk/wp-content/uploads/2021/07/Rental-Fashion-Causes-More-Emissions-Than-Throwing-Clothes-Away.jpg',
+    productTitle: 'เสื้อมือสอง',
+    price: 400,
+  },
+  {
+    imgSrc:
+      'https://www.greenqueen.com.hk/wp-content/uploads/2021/07/Rental-Fashion-Causes-More-Emissions-Than-Throwing-Clothes-Away.jpg',
+    productTitle: 'เสื้อมือสอง',
+    price: 400,
+  },
+  {
+    imgSrc:
+      'https://www.greenqueen.com.hk/wp-content/uploads/2021/07/Rental-Fashion-Causes-More-Emissions-Than-Throwing-Clothes-Away.jpg',
+    productTitle: 'เสื้อมือสอง',
+    price: 400,
+  },
+  {
+    imgSrc:
+      'https://www.greenqueen.com.hk/wp-content/uploads/2021/07/Rental-Fashion-Causes-More-Emissions-Than-Throwing-Clothes-Away.jpg',
+    productTitle: 'เสื้อมือสอง',
+    price: 400,
+  },
+];
+
 const storeProfileImg = 'https://i1.sndcdn.com/avatars-000399848019-jvvp3g-t500x500.jpg';
 const storeName = 'Hello shop';
 const storeRating = 4.8;
@@ -31,7 +59,9 @@ const ProductDetailContainer = styled(({ children, className }) => (
   <div className={className}>{children}</div>
 ))`
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 1250px;
   /* padding-left: 350px; */
   padding-top: 80px;
@@ -68,6 +98,38 @@ const FakeDropDown = styled(({ className, children }) => (
   border-bottom: 0.8px solid #d7d7d7;
 `;
 
+const MiniProductContainer = styled(({ className, title, products, backgroundColor }) => (
+  <div className={className} style={{ backgroundColor: backgroundColor ?? 'inherit' }}>
+    {title && <div style={{ fontSize: '30px', marginTop: '20px' }}>{title}</div>}
+    <div
+      style={{
+        width: '1225px',
+        display: 'flex',
+        justifyContent: 'space-between',
+        marginTop: '15px',
+      }}
+    >
+      {products &&
+        products.map((product) => {
+          return (
+            <ProductCard
+              imgSrc={product.imgSrc}
+              productTitle={product.productTitle}
+              price={product.price}
+              badge
+            />
+          );
+        })}
+    </div>
+  </div>
+))`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1225px;
+  margin-top: 30px;
+`;
+
 const ProductDetail = () => (
   <ProductDetailContainer>
     <ProductDetailSection>
@@ -92,6 +154,7 @@ const ProductDetail = () => (
         <FakeDropDown>ไซส์</FakeDropDown>
       </ProductDetailRightSubsection>
     </ProductDetailSection>
+    <MiniProductContainer title="คุณอาจจะชอบ" products={products} />
   </ProductDetailContainer>
 );
 
